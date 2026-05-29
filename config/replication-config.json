@@ -1,0 +1,3 @@
+[
+  { "source_view": "v_daily_sales", "target_table": "daily_sales" }
+]

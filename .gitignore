@@ -1,0 +1,40 @@
+# ── Terraform ─────────────────────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# 민감 변수 (실제 IP, 키 등) — .example만 커밋
+terraform/terraform.tfvars
+terraform/terraform.tfvars.json
+
+# ── Lambda 배포 패키지 ─────────────────────────────────────────
+# third-party 의존성: pip install -r lambda/requirements.txt -t lambda/ 로 재설치
+lambda/pymysql/
+lambda/PyMySQL-*.dist-info/
+lambda-modify-data/pymysql/
+
+# 빌드 산출물
+*.zip
+
+# ── 임시 Lambda 디렉터리 (일회성 데이터 준비용) ──────────────
+lambda_setup/
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── AWS / Claude Code ─────────────────────────────────────────
+.aws/
+.claude/
+
+# ── IDE ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
