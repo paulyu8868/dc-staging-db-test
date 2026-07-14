@@ -1,6 +1,6 @@
 # Salesforce DC ← Staging DB 복제 패턴 검증
 
-원본 재무 DB를 Private 서브넷에 격리하고, 분석용 View를 Public Staging DB로 주기 배치 복제하여  
+원본 DB를 Private 서브넷에 격리하고, 분석용 View를 Public Staging DB로 주기 배치 복제하여  
 **Salesforce Data Cloud(DC)가 Staging에서 읽는 아키텍처 패턴**을 AWS Sandbox에서 end-to-end 검증하는 프로젝트.
 
 > 상세 설계 근거: [docs/dc-staging-db-test-spec.md](docs/dc-staging-db-test-spec.md)  
